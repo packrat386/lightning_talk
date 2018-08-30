@@ -1,0 +1,36 @@
+Lazy Parsing
+On The Benefits of json.RawMessage
+
+Aidan Coyle
+Software Engineer @ Enova
+acoyle@enova.com
+
+* Complex JSON Is Hard To Parse
+
+.code example.json
+
+* The map[string]interface{} Method
+
+.code map.go /STRUCTS OMIT/,/END STRUCTS OMIT/
+
+* interface{} Incurs Pain
+
+.code map.go /USAGE OMIT/,/END USAGE OMIT/
+
+* Be Lazy
+
+.code rawmessage.go /STRUCTS OMIT/,/END STRUCTS OMIT/
+
+* Types Matter
+
+.code rawmessage.go /INTERNALS OMIT/,/END INTERNALS OMIT/
+
+* Guess Right
+
+.code rawmessage.go /USAGE OMIT/,/END USAGE OMIT/
+
+* Conclusions
+
+- Using `interface{}` makes parsing "simple" at the cost of losing context about our types.
+- `json.RawMessage` lets us be "lazy" and wait until we can guess right to parse.
+- Delaying parsing lets us use type-safety and context to our advantage.

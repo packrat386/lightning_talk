@@ -1,0 +1,22 @@
+{
+    "payments": [
+        {
+            "id": "12345",
+            "amount": "3.50",
+            "type": "ach",
+            "payment_details": {
+                "routing_number": "123456789",
+                "account_number": "987654321"
+            }
+        },
+        {
+            "id": "12345",
+            "amount": "3.50",
+            "type": "credit_card",
+            "payment_details": {
+                "card_number": "1111222233334444",
+                "expiration": "0618"
+            }
+        }
+    ]
+}
