@@ -30,7 +30,7 @@ var data = `{
 
 // STRUCTS OMIT
 type PaymentCollection struct {
-	Payments []*Payment `json"payments"`
+	Payments []*Payment `json:"payments"`
 }
 
 type Payment struct {
